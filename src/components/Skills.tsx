@@ -11,12 +11,12 @@ const Skills = () => {
     {
       title: "Tools",
       icon: <Cpu className="w-5 h-5" />,
-      skills: ["Git", "GitHub", "VS Code", "JetBrains IDEs"]
+      skills: ["Git", "GitHub"]
     },
     {
       title: "Databases",
       icon: <Database className="w-5 h-5" />,
-      skills: ["MySQL", "SQLite", "PostgreSQL"]
+      skills: ["MySQL", "Mongo"]
     },
     {
       title: "Frameworks & Libraries",
