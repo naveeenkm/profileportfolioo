@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -31,7 +30,7 @@ const Navbar = () => {
     return (
       <a 
         href={href}
-        className="relative px-2 py-1 text-sm text-navy-900 transition-colors hover:text-blue-600 font-medium"
+        className="relative px-2 py-1 text-sm text-navy-900 transition-colors hover:text-blue-600 font-medium group"
         onClick={() => setIsMenuOpen(false)}
       >
         <span className="relative z-10">{name}</span>
@@ -70,21 +69,27 @@ const Navbar = () => {
         {/* Mobile navigation toggle */}
         <button 
           className="md:hidden p-2 text-navy-800"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          onClick={() => setIsMenuOpen(true)}
         >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          <Menu size={24} />
         </button>
       </div>
       
-      {/* Mobile navigation menu with solid white background */}
+      {/* Mobile navigation menu with close button */}
       <div 
-        className={`fixed inset-0 z-40 bg-white transition-all duration-300 ease-in-out transform ${
+        className={`fixed inset-0 z-40 bg-white transition-transform duration-300 ease-in-out transform ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         } md:hidden`}
-        style={{ backgroundColor: '#ffffff' }}
       >
-        <div className="flex flex-col h-full pt-20 px-6">
-          <nav className="flex flex-col space-y-6 bg-white p-5">
+        <div className="flex flex-col h-full pt-6 px-6">
+          {/* Close button inside menu */}
+          <div className="flex justify-end">
+            <button onClick={() => setIsMenuOpen(false)} className="p-2 text-navy-800">
+              <X size={28} />
+            </button>
+          </div>
+
+          <nav className="flex flex-col space-y-6 mt-10">
             {navLinks.map((link) => (
               <a 
                 key={link.name}
