@@ -107,7 +107,7 @@ const Contact = () => {
                   <span>LinkedIn</span>
                 </a>
                 <a 
-                  href="https://github.com/naveeenkm" 
+                  href="www.linkedin.com/in/naveen-k-m-171109212" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="p-3 bg-navy-700 hover:bg-navy-600 text-white rounded-lg transition-colors flex items-center gap-2"
