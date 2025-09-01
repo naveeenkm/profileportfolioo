@@ -75,13 +75,13 @@ const Navbar = () => {
         </button>
       </div>
       
-      {/* Mobile navigation menu with close button */}
-      <div 
-        className={`fixed inset-0 z-40 bg-white transition-transform duration-300 ease-in-out transform ${
+      {/* Mobile navigation menu with solid white background */}
+      <div
+        className={`fixed inset-0 z-40 transition-transform duration-300 ease-in-out transform ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
-        } md:hidden`}
+        } md:hidden bg-white`}
       >
-        <div className="flex flex-col h-full pt-6 px-6">
+        <div className="flex flex-col h-full pt-6 px-6 bg-white">
           {/* Close button inside menu */}
           <div className="flex justify-end">
             <button onClick={() => setIsMenuOpen(false)} className="p-2 text-navy-800">
