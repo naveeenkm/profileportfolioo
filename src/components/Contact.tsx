@@ -98,7 +98,7 @@ const Contact = () => {
               <h3 className="text-xl font-bold mb-4 relative z-10">Connect on Social Media</h3>
               <div className="flex gap-4 relative z-10">
                 <a 
-                  href="https://linkedin.com/in/naveenkm" 
+                  href="https://www.linkedin.com/in/naveen-k-m-171109212/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="p-3 bg-navy-700 hover:bg-navy-600 text-white rounded-lg transition-colors flex items-center gap-2"
