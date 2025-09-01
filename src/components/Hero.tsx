@@ -39,7 +39,7 @@ const Hero = () => {
             
             <div className="flex items-center gap-4">
               <a 
-                href="https://linkedin.com/in/naveenkm" 
+                href="www.linkedin.com/in/naveen-k-m-171109212" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 text-navy-600 hover:text-blue-600 transition-colors"
